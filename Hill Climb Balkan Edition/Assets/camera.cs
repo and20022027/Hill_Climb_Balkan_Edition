@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraFollow2D : MonoBehaviour
+public class camera : MonoBehaviour
 {
     public Transform target;    // The object the camera will follow
     public float smoothSpeed = 1f;    // Smoothing factor for camera movement
@@ -13,7 +13,7 @@ public class CameraFollow2D : MonoBehaviour
         offset = transform.position - target.position;
     }
 
-    void LateUpdate()
+    void Update()
     {
         if (target != null)
         {
