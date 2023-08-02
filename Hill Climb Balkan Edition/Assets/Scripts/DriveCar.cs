@@ -7,11 +7,10 @@ public class DriveCar : MonoBehaviour
     public Rigidbody2D frontTireRB;
     public Rigidbody2D backTireRB;
     public Rigidbody2D carRB;
-    public float speed = 150f;
-    public float rotationSpeed = 300f;
-    public float forwardForce = 2000f;
+    public float speed = 150f; 
+    private float rotationspeed = 300f;
 
-    public float moveInput;
+    private float moveInput;
 
     void Update()
     {
@@ -21,6 +20,8 @@ public class DriveCar : MonoBehaviour
     {
         frontTireRB.AddTorque(-moveInput * speed * Time.fixedDeltaTime);
         backTireRB.AddTorque(-moveInput * speed * Time.fixedDeltaTime);
-        carRB.AddTorque(moveInput * rotationSpeed * Time.fixedDeltaTime);
+        carRB.AddTorque(moveInput * rotationspeed * Time.fixedDeltaTime);
+
+
     }
 }
