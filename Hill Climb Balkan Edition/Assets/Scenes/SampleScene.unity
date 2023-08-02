@@ -999,8 +999,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d33c471a9e217498f4ab935620dbf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 373630416}
+  Sasija: {fileID: 373630416}
   smoothSpeed: 4
+  zoomSpeed: 10000000
+  minZoom: 1
+  maxZoom: 1000
+  targetSpeedThreshold: 1000
 --- !u!1 &976944301
 GameObject:
   m_ObjectHideFlags: 0
