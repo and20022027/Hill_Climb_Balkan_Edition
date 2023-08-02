@@ -8,7 +8,7 @@ public class DriveCar : MonoBehaviour
     public Rigidbody2D backTireRB;
     public Rigidbody2D carRB;
     public float speed = 150f; 
-    private float rotationspeed = 300f;
+    private float rotationspeed = 2000f;
 
     private float moveInput;
 
