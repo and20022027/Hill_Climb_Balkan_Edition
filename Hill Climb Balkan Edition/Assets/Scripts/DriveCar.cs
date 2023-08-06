@@ -7,7 +7,7 @@ public class DriveCar : MonoBehaviour
     public Rigidbody2D frontTireRB;
     public Rigidbody2D backTireRB;
     public Rigidbody2D carRB;
-    public float speed = 150f; 
+    public float speed = 150f;
     private float rotationspeed = 2000f;
 
     private float moveInput;
@@ -16,12 +16,11 @@ public class DriveCar : MonoBehaviour
     {
         moveInput = Input.GetAxisRaw("Horizontal");
     }
-        void FixedUpdate()
+
+    void FixedUpdate()
     {
         frontTireRB.AddTorque(-moveInput * speed * Time.fixedDeltaTime);
         backTireRB.AddTorque(-moveInput * speed * Time.fixedDeltaTime);
         carRB.AddTorque(moveInput * rotationspeed * Time.fixedDeltaTime);
-
-
     }
 }
